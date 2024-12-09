@@ -5,10 +5,15 @@ Object=oriented classes are like blueprints
 Attribute = instance variable
 */
 public class Student {
-    //1. INSTANCE VARIABLES
+    //1. INSTANCE VARIABLES (attributes/data/fields)
     //think of what this object NEEDS to know
-    String name; //"a Student has a name"
-    int gradYear; //"the year a Student graduates"
+    // must be PRIVATE ("encapsulation")
+   private String name; //"a Student has a name"
+   private int gradYear; //"the year a Student graduates"
+   private String email;
+   private boolean sports;
+   private double gpa;
+
     //2. CONSTRUCTOR
 
     //3. METHODS (behaviors associated with that object)
