@@ -37,16 +37,48 @@ public class Student {
 
    }
 
-   
-
-
     //3. METHODS (behaviors associated with that object)
 
    // toString method provides a "String Representation" of an object instant with all of its data
 
    public String toString() {
-        return("Student[" + firstName + ", " + lastName + ", " + gradYear + ", " + email + "]" );
+    return("Student[" + firstName + ", " + lastName + ", " + gradYear + ", " + email + "]");
    }
+
+
+   // ACCESSOR METHODS ("Getters") return copies of the private data
+   // write one for each of your instance variables
+
+   public String getFirstName() {
+     return firstName;
+   }
+   public String getLastName() {
+    return lastName;
+  }
+  public int getGradYear() {
+    return gradYear;
+  }
+  public String getEmail() {
+    return email;
+  }
+
+  // MUTATOR METHODS accept a new value 
+  // and change the instance variable to it
+  // setters are void meaning no return 
+
+  public void setFirstName(String newFirstName) {
+    firstName = newFirstName;
+  }
+  public void setLastName(String newLastName) {
+    lastName = newLastName;
+  }
+  public void setGradYear(int newGradYear) {
+    gradYear = newGradYear;
+  }
+  public void setEmail(String newEmail) {
+    email = newEmail;
+  }
+
 
 
 }
