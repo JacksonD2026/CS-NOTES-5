@@ -41,6 +41,10 @@ public class Main {
       boolean isEqual = junior.equals(kinder);
       System.out.println(isEqual);
 
+     junior.complain();
+
+     junior.doHomework(8);
+
      }
    }
 

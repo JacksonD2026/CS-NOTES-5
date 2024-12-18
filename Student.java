@@ -62,7 +62,9 @@ public class Student {
     return email;
   }
 
-  // MUTATOR METHODS accept a new value 
+  
+
+  // MUTATOR METHODS "setters" accept a new value 
   // and change the instance variable to it
   // setters are void meaning no return 
 
@@ -77,6 +79,23 @@ public class Student {
   }
   public void setEmail(String newEmail) {
     email = newEmail;
+  }
+
+  
+
+  // New void methods
+
+  //EXAMPLE: no return no param
+  public void complain() {
+    System.out.println("I'm tired.");
+  }
+
+  //EXAMPLE: no return needs param
+  public void doHomework(int numAssignments) {
+    for (int i = numAssignments; i>0; i--) {
+      System.out.println("Working working working...");
+    }
+    Sytem.out.println("All done!");
   }
 
 
