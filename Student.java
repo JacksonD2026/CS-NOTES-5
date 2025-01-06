@@ -95,7 +95,7 @@ public class Student {
     for (int i = numAssignments; i>0; i--) {
       System.out.println("Working working working...");
     }
-    Sytem.out.println("All done!");
+    System.out.println("All done!");
   }
 
 
