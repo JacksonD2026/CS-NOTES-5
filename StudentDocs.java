@@ -44,42 +44,75 @@ public class StudentDocs {
 
    }
 
-
+   /**
+    * @return String representing the object's instance variables
+    */
    public String toString() {
     return("Student[" + firstName + ", " + lastName + ", " + gradYear + ", " + email + "]");
    }
 
 
-
+  /**
+    * @return String representing the object's first name
+    */
    public String getFirstName() {
      return firstName;
    }
+     /**
+    * @return String representing the object's last name
+    */
    public String getLastName() {
     return lastName;
   }
+    /**
+    * @return int representing the object's graduting year
+    */
   public int getGradYear() {
     return gradYear;
   }
+    /**
+    * @return String representing the object's email
+    */
   public String getEmail() {
     return email;
   }
 
+  /**
+    * @param String to change a value 
+    */
   public void setFirstName(String newFirstName) {
     firstName = newFirstName;
   }
+   /**
+    * @param String to change a value 
+    */
   public void setLastName(String newLastName) {
     lastName = newLastName;
   }
+   /**
+    * @param int to change a value 
+    */
   public void setGradYear(int newGradYear) {
     gradYear = newGradYear;
   }
+   /**
+    * @param String to change a value 
+    */
   public void setEmail(String newEmail) {
     email = newEmail;
   }
-
+  
+  /**
+   * When called upon a student object it prints a complain message
+   */
   public void complain() {
     System.out.println("I'm tired.");
   }
+
+   /**
+    * Loops until numAssigments reaches 0 
+    * @param numAssignments - an int repersnting the amount of homework assingment to be completed by the Student
+    */
 
   public void doHomework(int numAssignments) {
     for (int i = numAssignments; i>0; i--) {
